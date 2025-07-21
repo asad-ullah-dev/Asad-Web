@@ -55,7 +55,7 @@ const Page = () => {
 
       <SidebarContent>
         <SidebarGroup className="space-y-1">
-          <Link href="/" className={linkClasses("/Dashboard")}>
+          <Link href="/Dashboard" className={linkClasses("/Dashboard")}>
             <LayoutDashboard className="w-4 h-4" />
             Dashboard
           </Link>
