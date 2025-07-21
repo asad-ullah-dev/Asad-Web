@@ -21,6 +21,7 @@ import {
   UserRoundPlus,
 } from "lucide-react";
 
+// ✅ Yup Validation Schema
 const schema = yup.object().shape({
   email: yup.string().email("Valid email likho").required("Fill Your Email"),
   password: yup
@@ -49,13 +50,12 @@ const Page = () => {
     try {
       const res = await authService.login(data);
 
-      if (res.status === "success") {
+      // ✅ Fix: Only use res.data if it exists
+      if (res.status === "success" && res.data?.token) {
         localStorage.setItem("token", res.data.token);
-
-        // ✅ After successful login go to `/`
         router.push("/Dashboard");
       } else {
-        alert(res.message);
+        alert(res.message || "Login failed");
       }
     } catch (error: any) {
       alert(error?.response?.data?.message || "Something went wrong");
@@ -76,6 +76,7 @@ const Page = () => {
         </h2>
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 mt-6">
+          {/* Email */}
           <div className="relative">
             <Label className="text-sm" htmlFor="email">
               Email
@@ -93,6 +94,7 @@ const Page = () => {
             )}
           </div>
 
+          {/* Password */}
           <div className="relative">
             <Label className="text-sm" htmlFor="password">
               Password
@@ -122,6 +124,7 @@ const Page = () => {
             )}
           </div>
 
+          {/* Remember me & Forget password */}
           <div className="flex items-center justify-between pt-2">
             <div className="flex items-center">
               <input
@@ -143,6 +146,7 @@ const Page = () => {
             </div>
           </div>
 
+          {/* Submit Button */}
           <Button
             className="cursor-pointer flex items-center gap-2 w-full py-3"
             type="submit"
@@ -152,6 +156,7 @@ const Page = () => {
             {loading ? "Logging in..." : "Login"}
           </Button>
 
+          {/* Create Account */}
           <Link
             className="text-sm font-medium justify-center flex items-center gap-1"
             href="/auth/sign-up"
