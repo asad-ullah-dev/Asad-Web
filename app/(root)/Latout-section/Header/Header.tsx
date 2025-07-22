@@ -5,8 +5,9 @@ import { SidebarTrigger } from '@/components/ui/sidebar'
 import { Boxes, LogOut } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
-import Mode from "../../../components/LightDark/Mode"
+// import Mode from ""
 import { useRouter } from 'next/navigation'
+import Mode from '@/components/LightDark/Mode';
 
 const page = () => {
   const router = useRouter()
