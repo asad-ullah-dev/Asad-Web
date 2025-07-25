@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 
 const stripe = new Stripe(process.env.STRIPE_SCRET_KEY as string, {
-  apiVersion: '2024-04-10',
+
 });
 
 export async function POST(req: NextRequest) {
@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
     } = body;
 
     const currency = email.endsWith('.pk') ? 'pkr' : 'usd';
-    const multiplier = 100; // cents/paisa
+    const multiplier = 280; // cents/paisa
 
     const customer = await stripe.customers.create({
       name,
