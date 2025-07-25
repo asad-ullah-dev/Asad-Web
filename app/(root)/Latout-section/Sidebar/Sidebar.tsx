@@ -13,11 +13,11 @@ import {
 import {
   Bell,
   Boxes,
-  ChartNoAxesCombined,
   Database,
   Fuel,
   LayoutDashboard,
   LogOut,
+  ShoppingCart,
   TableColumnsSplit,
 } from "lucide-react"
 
@@ -59,9 +59,9 @@ const Page = () => {
             <LayoutDashboard className="w-4 h-4" />
             Dashboard
           </Link>
-          <Link href="/Dashboard/About-us" className={linkClasses("/Dashboard/About-us")}>
-            <ChartNoAxesCombined className="w-4 h-4" />
-            About Us
+          <Link href="/Dashboard/Product" className={linkClasses("/Dashboard/Product")}>
+            <ShoppingCart className="w-4 h-4" />
+            Product
           </Link>
           <Link href="/Dashboard/Blog" className={linkClasses("/Dashboard/Blog")}>
             <Database className="w-4 h-4" />

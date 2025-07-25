@@ -22,7 +22,7 @@ const page = () => {
           <TableCell>
             <div className="flex items-center gap-4">
                <div className='w-10 h-10'>
-                    <img className='w-10 h-10 rounded' alt='table 1' src="https://demos.creative-tim.com/material-dashboard/assets/img/team-2.jpg" />
+                    <img className='w-10 h-10 rounded-full' alt='table 1' src="https://demos.creative-tim.com/material-dashboard/assets/img/team-2.jpg" />
                 </div>
                 <div>
                     <h5 className='text-base font-semibold'>John Michael</h5>
@@ -41,14 +41,17 @@ const page = () => {
             <p className='text-sm text-gray-600 dark:text-white font-semibold'>23/04/18</p>
           </TableCell>
           <TableCell>
-            <p className='text-sm text-gray-600 dark:text-white'>Edit</p>
+            <label className="inline-flex items-center cursor-pointer">
+            <input type="checkbox" className="sr-only peer" checked disabled />
+            <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600" />
+            </label>
           </TableCell>
         </TableRow>
         <TableRow>
           <TableCell>
             <div className="flex items-center gap-4">
                  <div className='w-10 h-10'>
-                    <img className='w-10 h-10 rounded' alt='table 1' src="https://demos.creative-tim.com/material-dashboard/assets/img/team-3.jpg" />
+                    <img className='w-10 h-10 rounded-full' alt='table 1' src="https://demos.creative-tim.com/material-dashboard/assets/img/team-3.jpg" />
                 </div>
                 <div>
                     <h5 className='text-base font-semibold'>Alexa Liras</h5>
@@ -67,14 +70,17 @@ const page = () => {
             <p className='text-sm text-gray-600 dark:text-white font-semibold'>11/01/19</p>
           </TableCell>
           <TableCell>
-            <p className='text-sm text-gray-600 dark:text-white'>Edit</p>
+            <label className="inline-flex items-center cursor-pointer">
+            <input type="checkbox" className="sr-only peer" />
+            <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600" />
+            </label>
           </TableCell>
         </TableRow>
         <TableRow>
           <TableCell>
             <div className="flex items-center gap-4">
                 <div className='w-10 h-10'>
-                    <img className='w-10 h-10 rounded' alt='table 1' src="https://demos.creative-tim.com/material-dashboard/assets/img/team-4.jpg" />
+                    <img className='w-10 h-10 rounded-full' alt='table 1' src="https://demos.creative-tim.com/material-dashboard/assets/img/team-4.jpg" />
                 </div>
                 <div>
                     <h5 className='text-base font-semibold'>Laurent Perrier</h5>
@@ -93,14 +99,17 @@ const page = () => {
             <p className='text-sm text-gray-600 dark:text-white font-semibold'>19/09/17</p>
           </TableCell>
           <TableCell>
-            <p className='text-sm text-gray-600 dark:text-white'>Edit</p>
+            <label className="inline-flex items-center cursor-pointer">
+            <input type="checkbox" className="sr-only peer" checked disabled />
+            <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600" />
+            </label>
           </TableCell>
         </TableRow>
         <TableRow>
           <TableCell>
             <div className="flex items-center gap-4">
                 <div className='w-10 h-10'>
-                    <img className='w-10 h-10 rounded' alt='table 1' src="https://demos.creative-tim.com/material-dashboard/assets/img/team-3.jpg" />
+                    <img className='w-10 h-10 rounded-full' alt='table 1' src="https://demos.creative-tim.com/material-dashboard/assets/img/team-3.jpg" />
                 </div>
                 <div>
                     <h5 className='text-base font-semibold'>Michael Levi</h5>
@@ -119,14 +128,17 @@ const page = () => {
             <p className='text-sm text-gray-600 dark:text-white font-semibold'>24/12/08</p>
           </TableCell>
           <TableCell>
-            <p className='text-sm text-gray-600 dark:text-white'>Edit</p>
+             <label className="inline-flex items-center cursor-pointer">
+            <input type="checkbox" className="sr-only peer" checked disabled />
+            <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600" />
+            </label>
           </TableCell>
         </TableRow>
         <TableRow>
           <TableCell>
             <div className="flex items-center gap-4">
                  <div className='w-10 h-10'>
-                    <img className='w-10 h-10 rounded' alt='table 1' src="https://demos.creative-tim.com/material-dashboard/assets/img/team-2.jpg" />
+                    <img className='w-10 h-10 rounded-full' alt='table 1' src="https://demos.creative-tim.com/material-dashboard/assets/img/team-2.jpg" />
                 </div>
                 <div>
                     <h5 className='text-base font-semibold'>Richard Gran</h5>
@@ -145,14 +157,17 @@ const page = () => {
             <p className='text-sm text-gray-600 dark:text-white font-semibold'>04/10/21</p>
           </TableCell>
           <TableCell>
-            <p className='text-sm text-gray-600 dark:text-white'>Edit</p>
+             <label className="inline-flex items-center cursor-pointer">
+            <input type="checkbox" className="sr-only peer" />
+            <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600" />
+            </label>
           </TableCell>
         </TableRow>
         <TableRow>
           <TableCell>
             <div className="flex items-center gap-4">
                 <div className='w-10 h-10'>
-                    <img className='w-10 h-10 rounded' alt='table 1' src="https://demos.creative-tim.com/material-dashboard/assets/img/team-4.jpg" />
+                    <img className='w-10 h-10 rounded-full' alt='table 1' src="https://demos.creative-tim.com/material-dashboard/assets/img/team-4.jpg" />
                 </div>
                 <div>
                     <h5 className='text-base font-semibold'>Miriam Eric</h5>
@@ -171,7 +186,10 @@ const page = () => {
             <p className='text-sm text-gray-600 dark:text-white font-semibold'>14/09/20</p>
           </TableCell>
           <TableCell>
-            <p className='text-sm text-gray-600 dark:text-white'>Edit</p>
+           <label className="inline-flex items-center cursor-pointer">
+            <input type="checkbox" className="sr-only peer" />
+            <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600" />
+            </label>
           </TableCell>
         </TableRow>
       </TableBody>

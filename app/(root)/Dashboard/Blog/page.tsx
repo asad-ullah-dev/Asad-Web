@@ -43,10 +43,10 @@ const page = () => {
   return (
     <div className='pt-12'>
         <h2 className='text-3xl font-bold text-black'>Blog Post</h2>
-      <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-6 py-7">
+      <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-5 py-7">
         {Blog.map((item) => (
             <div key={item.id} className="bg-white shadow rounded">
-                <img className='w-full h-44 rounded object-cover' src={item.image} alt="blog image" />
+                <img className='w-full h-44 rounded-t object-cover' src={item.image} alt="blog image" />
                 <div className='px-2.5 pb-3'>
                     <h3 className='pt-4 text-xl font-medium'>{item.tittle}</h3>
                     <p className='text-sm font-normal text-gray-500 pt-2.5'>{item.description}</p>
