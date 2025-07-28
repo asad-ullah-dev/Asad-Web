@@ -21,6 +21,9 @@ import {
   UserRoundPlus,
 } from "lucide-react";
 
+// ✅ toast
+import { toast } from "sonner";
+
 // ✅ Yup Validation Schema
 const schema = yup.object().shape({
   email: yup.string().email("Valid email likho").required("Fill Your Email"),
@@ -50,15 +53,23 @@ const Page = () => {
     try {
       const res = await authService.login(data);
 
-      // ✅ Fix: Only use res.data if it exists
       if (res.status === "success" && res.data?.token) {
         localStorage.setItem("token", res.data.token);
-        router.push("/Dashboard");
+
+        const role = res.data?.user?.role;
+
+        if (role === "admin") {
+          toast.success("Admin Login Successful!");
+          router.push("/admin/Dashboard");
+        } else {
+          toast.success("User Login Successful!");
+          router.push("/Dashboard");
+        }
       } else {
-        alert(res.message || "Login failed");
+        toast.error(res.message || "Login failed");
       }
     } catch (error: any) {
-      alert(error?.response?.data?.message || "Something went wrong");
+      toast.error(error?.response?.data?.message || "Something went wrong");
     } finally {
       setLoading(false);
     }
@@ -90,7 +101,9 @@ const Page = () => {
               {...register("email")}
             />
             {errors.email && (
-              <p className="text-red-500 text-sm mt-1 absolute">{errors.email.message}</p>
+              <p className="text-red-500 text-sm mt-1 absolute">
+                {errors.email.message}
+              </p>
             )}
           </div>
 

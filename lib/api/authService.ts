@@ -21,7 +21,7 @@ export const authService = {
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
     // Simple mock check (replace with actual backend logic if needed)
-    if (data.email === "admin@gmail.com" && data.password === "12345678") {
+    if (data.email === "ullaasad315@gmail.com" && data.password === "12345678") {
       return {
         status: "success",
         message: "Login successful",

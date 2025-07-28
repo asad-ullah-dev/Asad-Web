@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "../../app/globals.css";
+import { Toaster } from "sonner";
 
 
 export const metadata: Metadata = {
@@ -15,6 +16,7 @@ export default function AuthLayout({
   return (
     <html lang="en">
       <body>
+         <Toaster richColors position="top-right" />
         {children}
       </body>
     </html>
