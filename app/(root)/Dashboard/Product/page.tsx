@@ -15,7 +15,7 @@ const ProductCard = ({ data }: any) => {
 
   return (
 
-      <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+      <div className="h-full border-2 border-gray-200 border-opacity-60 dark:bg-gray-100 rounded-lg overflow-hidden">
         <img
           className="h-[373px] w-full object-cover object-center"
           src={data.image}
@@ -35,7 +35,7 @@ const ProductCard = ({ data }: any) => {
         </div>
             <button
               onClick={handleCheckout}
-              className="w-full cursor-pointer text-white bg-blue-500 border-0 py-2 px-6 hover:bg-blue-600 rounded"
+              className="w-full cursor-pointer text-white bg-blue-500 font-medium border-0 py-2 px-6 hover:bg-blue-600 rounded"
             >
               {loading ? "Loading..." : `Pay `}
               ${data.price}
@@ -48,7 +48,7 @@ const ProductCard = ({ data }: any) => {
 const page = () => {
   return (
     <section className=" mx-auto py-10">
-        <h2 className="text-2xl font-bold mb-3 uppercase">Products</h2>
+        <h2 className="text-2xl font-bold mb-3 uppercase dark:text-black">Products</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-600 body-font">
           {Products.map((product, i) => (
             <ProductCard data={product} key={i} />

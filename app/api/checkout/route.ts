@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
     } = body;
 
     const currency = email.endsWith('.pk') ? 'pkr' : 'usd';
-    const multiplier = 280; // cents/paisa
+    const multiplier = 100; // cents/paisa
 
     const customer = await stripe.customers.create({
       name,
