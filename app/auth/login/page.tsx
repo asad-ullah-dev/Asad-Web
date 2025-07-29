@@ -56,7 +56,8 @@ const Page = () => {
       if (res.status === "success" && res.data?.token) {
         localStorage.setItem("token", res.data.token);
 
-        const role = res.data?.user?.role;
+        // const role = res.data?.user?.role;
+        const role = (res.data.user as any)?.role ?? '';
 
         if (role === "admin") {
           toast.success("Admin Login Successful!");
