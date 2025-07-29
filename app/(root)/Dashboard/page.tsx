@@ -183,27 +183,27 @@ const page = () => {
             <h4 className="text-xl font-medium">Orders overview</h4>
             <p className="text-sm font-normal text-gray-600 dark:text-white"><span className="font-semibold">24%</span> this month</p>   
         <ol className="relative border-s border-gray-300 dark:border-gray-500 mt-5">                  
-        <li className="mb-4 ms-6">
+        <li className="mb-3 ms-6">
         <Bell className="absolute w-4 h-4 -start-2 text-green-500 bg-white dark:bg-gray-700" />
         <h3 className="text-base font-semibold text-gray-900 dark:text-white">$2400, Design changes</h3>
         <p className="text-sm font-medium text-gray-600 dark:text-gray-400">22 DEC 7:20 PM</p>
       </li>
-      <li className="mb-4 ms-6">
+      <li className="mb-3 ms-6">
         <ChevronsLeftRight className="absolute w-5 h-5 -start-2 text-red-500 bg-white dark:bg-gray-700" />
         <h3 className="text-base font-semibold text-gray-900 dark:text-white">New order #1832412</h3>
         <p className="text-sm font-medium text-gray-600 dark:text-gray-400">21 DEC 11 PM</p>
       </li>
-      <li className="mb-4 ms-6">
+      <li className="mb-3 ms-6">
       <ShoppingCart className="absolute w-4 h-4 -start-2 text-blue-500 bg-white dark:bg-gray-700" />
      <h3 className="text-base font-semibold text-gray-900 dark:text-white">Server payments for April</h3>
       <p className="text-sm font-medium text-gray-600 dark:text-gray-400">21 DEC 9:34 PM</p>
       </li>
-      <li className="mb-4 ms-6">
+      <li className="mb-3 ms-6">
       <CreditCard className="absolute w-4 h-4 -start-2 text-orange-500 bg-white dark:bg-gray-700" />
       <h3 className="text-base font-semibold text-gray-900 dark:text-white">New card added for order #4395133</h3>
       <p className="text-sm font-medium text-gray-600 dark:text-gray-400">20 DEC 2:20 AM</p>
     </li>
-    <li className="mb-4 ms-6">
+    <li className="mb-3 ms-6">
     <KeyRound className="absolute w-4 h-4 -start-2 text-red-600 bg-white dark:bg-gray-700" />
      <h3 className="text-base font-semibold text-gray-900 dark:text-white">Unlock packages for development</h3>
     <p className="text-sm font-medium text-gray-600 dark:text-gray-400">18 DEC 4:54 AM</p>

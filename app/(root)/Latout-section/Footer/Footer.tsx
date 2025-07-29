@@ -11,8 +11,8 @@ const Footer = () => {
         <Link className='text-base font-medium text-gray-500' href="/Dashboard/Tables">
           Tables
         </Link>
-        <Link className='text-base font-medium text-gray-500' href="/Dashboard/About-us">        
-        About Us
+        <Link className='text-base font-medium text-gray-500' href="/Dashboard/Product">        
+        Product
         </Link>
         <Link className='text-base font-medium text-gray-500' href="/Dashboard/Blog">
           Blog

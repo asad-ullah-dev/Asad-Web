@@ -44,13 +44,10 @@ const Page = () => {
   return (
     <Sidebar>
       <SidebarHeader>
-        <Link
-          className="text-lg font-semibold gap-2 flex items-center pb-3 border-b border-gray-200"
-          href="/Dashboard"
-        >
-          <Boxes className="w-5 h-5" />
-          ASAD WEB
-        </Link>
+         <Link className="text-lg font-semibold gap-1 flex items-center" href="/Dashboard">
+         <img className='w-10 h-10 filter dark:brightness-105 dark:invert' src="https://sdmntprwestus.oaiusercontent.com/files/00000000-aebc-6230-a286-f2048ff98525/raw?se=2025-07-29T06%3A30%3A03Z&sp=r&sv=2024-08-04&sr=b&scid=2d22a9fc-385b-5706-811f-21ed5539e2b1&skoid=61180a4f-34a9-42b7-b76d-9ca47d89946d&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-28T19%3A09%3A22Z&ske=2025-07-29T19%3A09%3A22Z&sks=b&skv=2024-08-04&sig=g9dfEYGnT00/fgguJwKTJXq5Gx8vs%2BWDDu2U5WJU89Q%3D" alt="" />
+         ASAD WEB
+      </Link>
       </SidebarHeader>
 
       <SidebarContent>

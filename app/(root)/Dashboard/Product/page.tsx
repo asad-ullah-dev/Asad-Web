@@ -15,7 +15,7 @@ const ProductCard = ({ data }: any) => {
 
   return (
 
-      <div className="h-full border-2 border-gray-200 border-opacity-60 dark:bg-gray-100 rounded-lg overflow-hidden">
+      <div className="h-full border-2 border-gray-200 border-opacity-60 dark:bg-gray-200 rounded-lg overflow-hidden">
         <img
           className="h-[373px] w-full object-cover object-center"
           src={data.image}
