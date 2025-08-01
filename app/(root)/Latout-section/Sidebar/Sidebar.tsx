@@ -19,6 +19,7 @@ import {
   LogOut,
   ShoppingCart,
   TableColumnsSplit,
+  Users,
 } from "lucide-react"
 import { toast } from 'sonner'
 
@@ -79,6 +80,10 @@ const Page = () => {
           <Link href="/Dashboard/Notifications" className={linkClasses("/Dashboard/Notifications")}>
             <Bell className="w-4 h-4" />
             Notifications
+          </Link>
+          <Link href="/Dashboard/User" className={linkClasses("/Dashboard/User")}>
+            <Users className="w-4 h-4" />
+            User
           </Link>
         </SidebarGroup>
       </SidebarContent>

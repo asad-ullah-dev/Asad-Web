@@ -61,7 +61,7 @@ const Page = () => {
 
         if (role === "admin") {
           toast.success("Admin Login Successful!");
-          router.push("/admin/Dashboard");
+          router.push("/Dashboard");
         } else {
           toast.success("User Login Successful!");
           router.push("/Dashboard");
