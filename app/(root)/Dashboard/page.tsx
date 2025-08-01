@@ -80,7 +80,7 @@ const page = () => {
             <div className="border-t border-gray-200 py-1.5">
               <div className="flex items-center gap-1 text-sm font-bold">
                 <span className={`${item.textcolor}`}>{item.number}</span>
-                <p className="text-gray-600 font-normal dark:text-white">{item.dates}</p>
+                <p className="text-gray-600 font-normal dark:text-white">{item.dates}</p>   
                 </div>
             </div>
         </div>

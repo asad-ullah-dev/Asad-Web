@@ -8,17 +8,22 @@ import React from 'react'
 // import Mode from ""
 import { useRouter } from 'next/navigation'
 import Mode from '@/components/LightDark/Mode';
+import { toast } from 'sonner'
+
 
 const page = () => {
   const router = useRouter()
 
   const handleLogout = () => {
-    // 🔴 Remove token
-    localStorage.removeItem("token")
+  // 🔴 Remove token
+  localStorage.removeItem("token");
 
-    // 🔁 Redirect to login
-    router.push("/auth/login")
-  }
+  // ✅ Show toast
+  toast.success("Logout successful!");
+
+  // 🔁 Redirect to login
+  router.push("/auth/login");
+};
 
   return (
     <div className='flex items-center justify-between gap-2 px-3 py-2 bg-white dark:bg-gray-700 rounded sticky top-2 w-full shadow z-50'>

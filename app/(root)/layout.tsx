@@ -5,6 +5,7 @@ import { SidebarProvider } from "@/components/ui/sidebar"
 import Sidebar from "./Latout-section/Sidebar/Sidebar";
 import Header from "./Latout-section/Header/Header";
 import Footer from "./Latout-section/Footer/Footer";
+import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
       <main className="w-full px-4 bg-gray-100 dark:bg-white">
       <Header />
         {children}
+        <Toaster richColors position="top-right" />
       <Footer />
       </main>
     </SidebarProvider>

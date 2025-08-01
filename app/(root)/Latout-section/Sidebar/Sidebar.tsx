@@ -20,6 +20,7 @@ import {
   ShoppingCart,
   TableColumnsSplit,
 } from "lucide-react"
+import { toast } from 'sonner'
 
 const Page = () => {
   const router = useRouter()
@@ -27,6 +28,9 @@ const Page = () => {
   const handleLogout = () => {
     // 🔴 Remove token
     localStorage.removeItem("token")
+
+    // ✅ Show toast
+    toast.success("Logout successful!");
 
     // 🔁 Redirect to login
     router.push("/auth/login")
